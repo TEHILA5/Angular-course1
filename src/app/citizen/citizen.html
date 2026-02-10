@@ -1,0 +1,21 @@
+<div class="c1">
+  <div>שם פרטי: {{ firstName }}</div>
+  <div>שם משפחה: {{ lastName }}</div>
+  <div>מספר זהות: {{ idNumber }}</div>
+  <div>מספר ילדים: {{ childrenCount }}</div>
+  <div>ישראלי/ת: {{ isIsraeli ? "כן" : "לא" }}</div>
+  <div>גיל: {{ getAge() }}</div>
+
+  <img
+    [src]="imageName"
+    [hidden]="!showImage"
+    width="150"
+  >
+
+  <br><br>
+
+  <button (click)="hideImage()">
+    {{ showImage ? 'הסתר תמונה' : 'הצג תמונה' }}
+  </button>
+</div>
+
