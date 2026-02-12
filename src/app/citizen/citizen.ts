@@ -5,15 +5,52 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './citizen.html',
   styleUrl: './citizen.scss',
-  styles: [`
-    .c1 {
-      border: 2px solid #555;
-      padding: 10px;
+  styles: [` 
+    :host {
+      display: block;
+      width: 300px;  
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
     }
-  `],
-  host: {
-    'style': 'display:block; margin:20px; background:white;'
-  }
+
+    :host:hover {
+      transform: translateY(-5px);  
+    }
+ 
+    .c1 { 
+      gap: 10px;
+      color: #34495e;
+    }
+ 
+    img {
+      width: 70%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+    }
+ 
+    button {
+      width: 100%;
+      background-color: #702388;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #3a0b41;
+    }
+  `]
 })
 export class Citizen {
   public firstName: string = 'תהילה';

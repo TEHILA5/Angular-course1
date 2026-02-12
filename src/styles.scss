@@ -1,10 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e4edf7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f3;
+  display: flex;
   text-align: center;
+  justify-content: center;
+  padding: 40px; 
 }
 
 h1 {
-  color: rgb(137, 176, 235);
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
 }
